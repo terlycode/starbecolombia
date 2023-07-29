@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbe Colombia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+</html>
+<body>
+    <header>
+        <h1>STARBE COLOMBIA</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Bienvenido  a Starbe Colombia </h2>
+            <p>¡Hola! Esta es una página creada por anderson acosta.</p>            
+        </section>
+
+        <section id= "anuncios">
+            <h2>Anuncios</h2>
+            <!-- Patrocinado por 30/30 -->
+        </section>
+        section id="contacto">
+            <h2>Guías de contacto</h2>
+            <!-- Contenido de la sección de guías de contacto -->
+        </section>
+
+        <section id="catalogo">
+            <h2>Catálogo</h2>
+            <!-- Contenido del catálogo -->
+            <button onclick="toggleSections()">Buscar por sección</button>
+            <div id="secciones" style="display: none;">
+                <ul>
+                    <li><a href="#seccion1">Sección 1</a></li>
+                    <li><a href="#seccion2">Sección 2</a></li>
+    </main>
+    <footer>
+        <p>Derechos de autor &copy; 2023 | starbecolombia</p>
+    </footer>
+    <script>
+        function toggleSections() {
+            var seccionesDiv = document.getElementById("secciones");
+            if (seccionesDiv.style.display === "none") {
+                seccionesDiv.style.display = "block";
+            } else {
+                seccionesDiv.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
